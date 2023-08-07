@@ -1,0 +1,26 @@
+name: despliegue
+on: 
+  push: 
+    branches: 
+      - main
+  pull_request: 
+    branches: 
+      - main
+jobs: 
+  despliegue_jobs:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+      - name: install npm  
+        uses: actions/setup-node@v2
+        with: 
+          node-version: 16
+      - name: instalar dependencias          
+        run: |
+          npm install --force         
+      - name: run deploy
+        run: |
+          git remote set-url origin https://git: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@github.com/gitfocux/focux-space-program.git
+          git config --global user.email "git@focux.ai"
+          git config --global user.name "Gitfocux"
+          CI=false npm run deploy
