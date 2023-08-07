@@ -1,5 +1,6 @@
 {
   "name": "focux-space-program",
+  "homepage": "https://gitfocux.github.io/focux-space-program/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
