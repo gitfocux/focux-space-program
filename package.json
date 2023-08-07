@@ -23,8 +23,8 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "predeploy" : "npm run build && npm run copy &&  echo gitfocux.github.io/focux-space-program > ./build/CNAME",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build && npm run copy &&  echo gitfocux.github.io/focux-space-program > ./build/CNAME",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
