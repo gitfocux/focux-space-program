@@ -68,7 +68,7 @@ function Space() {
             contador = contador + 5 * 60;
         }
 
-        console.log(cartesian);
+        //console.log(cartesian);
 
         czmlDataProv.push({
             id: "Satellite/Platzi",

@@ -18,10 +18,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "copy": "cp ./build/index.html ./build/404.html",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build && npm run copy &&  echo gitfocux.github.io/focux-space-program > ./build/CNAME",
+    "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
