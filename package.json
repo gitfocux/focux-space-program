@@ -25,7 +25,7 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build && npm run copy &&  echo gitfocux.github.io/focux-space-program > ./build/CNAME",
-    "deploy": "gh-pages -d build -t $GH_TOKEN"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
