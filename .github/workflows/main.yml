@@ -25,4 +25,4 @@ jobs:
           git remote set-url origin https://git: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@github.com/gitfocux/focux-space-program.git
           git config --global user.email "git@focux.ai"
           git config --global user.name "Gitfocux"
-          CI=false npm run deploy
+          CI=false npm run deploy -t $GH_TOKEN
